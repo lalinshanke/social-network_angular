@@ -1,0 +1,16 @@
+body{padding:0; margin:0; font-family: Arial, Helvetica, sans-serif; font-size: 14px; color:#6a6c6d;}
+.mainWrapper{ /*width:100%; height: 100%; position: absolute; display:flex; flex-direction: column;*/}
+.headSection {width:100%; height:240px; /*background-color: #9c27b0; background-color: #007495;*/ background-color: #019ed1; text-align: center;}
+.headSection img {max-width:100%;}
+.contentGroup{display:flex; /*flex-direction: row;*/}
+.leftSection{/*flex-basis:300px;*/ background-color: #673AB7; flex: 1;background-color:#f1f1f1; color:#f1f1f1;}
+.contentSection{background-color: #2196F3; background-color:#f1f1f1; padding:15px;     flex: 1;}
+.rightSection{background-color: #00BCD4; background-color:#f1f1f1; color:#f1f1f1;}
+
+ /* .mainWrapper{ width:100%; height: 100%; position: absolute;}
+.headSection {height:240px; background-color: #9c27b0;}
+.contentGroup{display: table; width: 100%; height: calc(100% - 240px);}
+.leftSection{width:20%;    background-color: #673AB7; display: table-cell;}
+.contentSection{width:60%;  background-color: #2196F3; display: table-cell;}
+.rightSection{width:20%; background-color: #00BCD4; display: table-cell;} */
+/* .replyUserPicandMessageSet:last-child{margin-bottom: 0;} */
