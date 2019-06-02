@@ -1,4 +1,4 @@
-<div class="contentSection" *ngFor="let userList of userInfo">
+<div class="contentSection" *ngFor="let userList of dataList">
   <div class="postInfoSet">
     <div class="postInfoHead">
       <div class="postProfilePic">
@@ -31,6 +31,18 @@
                 <div class="replyUserPic"><img src="{{postMessReply.replyUserPhoto}}"></div>
                 <div class="replyUserMessage"><span class="replyNameBold">{{postMessReply.replyUserName}} </span> {{postMessReply.replyUser}}</div>
               </div>
+
+              <ul>
+                <li *ngFor="let secondPostMessReply of postMessReply.secondLevelReply">
+                  <div class="replyUserPicandMessageSet">
+                    <div class="replyUserPic"><img src="{{secondPostMessReply.secondReplyUserPhoto}}"></div>
+                    <div class="replyUserMessage"><span class="replyNameBold">{{secondPostMessReply.secondReplyUserName}} </span> {{postMessReply.replyUser}}</div>
+                  </div>
+                </li>
+                <input class="postComment" placeholder="Type your comment" />
+              </ul>
+
+
             </li>
             <input class="postComment" placeholder="Type your comment" />
           </ul>
@@ -39,6 +51,11 @@
     </div>
     <input class="postComment" placeholder="Type your comment" />
   </div>
+</div>
+
+<div class="officeSet" *ngFor="let office of teamName">
+<div class="name">{{office.name}}</div>
+<div class="name">{{office.address}}</div>
 </div>
  <!-- <div class="postComment" *ngFor="let userPic of userList.postComments">{{userPic.Comment}}
       <div *ngFor="let reply of userPic.reply">{{reply.replyUser}}</div>
