@@ -10,7 +10,9 @@ import { RightSectionComponent } from './right-section/right-section.component';
 import { FormsModule } from '@angular/forms';
 import { PostHeaderComponent } from './main-content-section/post-header/post-header.component';
 import { PostTypeComponent } from './main-content-section/post-type/post-type.component';
-import { CommentLeve1Component } from './main-content-section/comment-leve1/comment-leve1.component';
+import { CommentLeve1Component } from './main-content-section/comment-level/comment-leve1.component';
+import { SubComment1Component } from './main-content-section/comment-level/sub-comment1/sub-comment1.component';
+import { SubComment2Component } from './main-content-section/comment-level/sub-comment1/sub-comment2/sub-comment2.component';
 @NgModule({
    declarations: [
       AppComponent,
@@ -20,7 +22,9 @@ import { CommentLeve1Component } from './main-content-section/comment-leve1/comm
       RightSectionComponent,
       PostHeaderComponent,
       PostTypeComponent,
-      CommentLeve1Component
+      CommentLeve1Component,
+      SubComment1Component,
+      SubComment2Component
    ],
    imports: [
       BrowserModule,

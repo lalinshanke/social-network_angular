@@ -1,32 +1,20 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, OnChanges } from '@angular/core';
 
 @Component({
   selector: 'app-main-content-section',
   templateUrl: './main-content-section.component.html',
   styleUrls: ['./main-content-section.component.css']
 })
-export class MainContentSectionComponent implements OnInit {
+export class MainContentSectionComponent implements OnInit, OnChanges {
 
   @Input() dataList: any;
 
-
-  teamName = [{
-    name: 'Dhoni',
-    address: 'chennai'
-  },
-  {
-    name: 'Suresh',
-    address: 'Delhi'
-  },
-  {
-    name: 'raja',
-    address: 'mumbai'
+  constructor() {
+    console.log('data list', this.dataList);
   }
-]
-
-  constructor() {}
-
-
 
   ngOnInit() {}
+  ngOnChanges(){
+    console.log('data list', this.dataList);
+  }
 }

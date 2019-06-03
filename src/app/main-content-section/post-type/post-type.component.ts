@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-post-type',
@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./post-type.component.css']
 })
 export class PostTypeComponent implements OnInit {
+
+  @Input() postType: any;
 
   constructor() { }
 

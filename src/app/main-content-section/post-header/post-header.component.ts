@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input, OnChanges } from '@angular/core';
 
 @Component({
   selector: 'app-post-header',
@@ -7,7 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PostHeaderComponent implements OnInit {
 
-  constructor() { }
+  @Input() postHeader: any;
+
+  constructor() {
+
+  }
 
   ngOnInit() {
   }

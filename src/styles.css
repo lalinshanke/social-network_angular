@@ -14,3 +14,24 @@ body{padding:0; margin:0; font-family: Arial, Helvetica, sans-serif; font-size: 
 .contentSection{width:60%;  background-color: #2196F3; display: table-cell;}
 .rightSection{width:20%; background-color: #00BCD4; display: table-cell;} */
 /* .replyUserPicandMessageSet:last-child{margin-bottom: 0;} */
+.postInfoSet{width:500px; background-color: #fff; padding: 15px; margin-bottom: 15px;}
+.postInfoSet:last-child{margin-bottom: 0;}
+.postInfoHead { padding-bottom:15px; border-bottom:solid 1px #90caf9; margin-bottom: 15px;}
+.postProfilePic {width:50px; height:50px; background-color:#90caf9;border-radius: 50px; display: inline-block; vertical-align: middle; overflow: hidden;}
+.postNameInfoSet {margin-left:15px; display: inline-block; vertical-align: middle; }
+.postUserName{font-weight: bold; font-size: 15px; text-transform: uppercase; color:#656060}
+.postUpdateTime {color:darkgray}
+.postType{background-color: #e9f4fe; padding: 15px; margin-bottom: 15px; border:solid 1px #c5e3fc}
+input {width: 100%; padding: 12px 15px; box-sizing: border-box; border: solid 1px #90caf9; outline: none; color: #6a6c6d;}
+.commentReplySet ul {margin: 0 0 15px 0; padding: 0;}
+.commentReplySet ul li {list-style: none; }
+.commentReplySet ul li ul {background-color:#e9f4fe; padding: 10px; margin-top: 5px; margin-left: 40px;}
+.commentReplySet ul li ul input {padding: 8px 15px;}
+.commentReplySet ul li ul li ul {margin-bottom: 0; margin-left: 33px; padding-right: 0; margin-top: 0; padding-top: 0;}
+.replyUserPic {width:28px; height:28px; background-color:#c5e3fc; display: inline-block; overflow: hidden; vertical-align: top;}
+.replyUserMessage {background-color:#fdfdfd; padding:6px 10px; margin-left: 12px; display: inline-block; width: calc(100% - 64px); vertical-align: top; border: solid 1px #c5e3fc; position: relative;}
+.replyUserPicandMessageSet {margin-bottom:5px;}
+.postType img {width:100%;}
+.postTypeContent{max-height: 240px; overflow-y: auto;}
+.replyNameBold {font-weight: bold;}
+.replyIcon {width: 10px; height: 10px; background-color: #e2e2e2; position: absolute; right: 5px; bottom: 5px;}

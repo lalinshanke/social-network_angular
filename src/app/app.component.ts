@@ -28,13 +28,13 @@ export class AppComponent {
               replyLikeAndDislike: "",
               secondLevelReply: [
                 {
-                  secondReplyUserName: "shankalal",
+                  secondReplyUserName: "Shankalal",
                   secondReplyUserPhoto: "../../assets/images/4.jpg",
                   secondReplyUser: "Not that much good",
                   secondReplyLikeAndDislike: ""
                 },
                 {
-                  secondReplyUserName: "raja",
+                  secondReplyUserName: "Raja",
                   secondReplyUserPhoto: "../../assets/images/5.jpg",
                   secondReplyUser:
                     "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text.",

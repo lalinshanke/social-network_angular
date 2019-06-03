@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-comment-leve1',
@@ -7,9 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CommentLeve1Component implements OnInit {
 
+  commentTypeBar = false;
+
+  @Input() postComment: any;
+
   constructor() { }
 
   ngOnInit() {
+  }
+  showCommentTypeBar(){
+    this.commentTypeBar = true;
   }
 
 }

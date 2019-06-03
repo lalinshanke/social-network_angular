@@ -1,3 +1,9 @@
-<p>
-  post-type works!
-</p>
+<div class="postType">
+    <div *ngIf="postType.postTypeImg; then imageDiv; else contentDiv"></div>
+    <ng-template #imageDiv>
+      <div class="postTypeImg"><img src="{{ postType.postTypeImg }}" /></div>
+    </ng-template>
+    <ng-template #contentDiv>
+      <div class="postTypeContent">{{ postType.postTypeContent }}</div>
+    </ng-template>
+  </div>

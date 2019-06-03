@@ -1,64 +1,13 @@
-<div class="contentSection" *ngFor="let userList of dataList">
+<div class="contentSection" *ngFor="let userList of dataList; let i = index">
   <div class="postInfoSet">
-    <div class="postInfoHead">
-      <div class="postProfilePic">
-        <img src="{{ userList.profileImage }}" />
-      </div>
-      <div class="postNameInfoSet">
-        <div class="postUserName">{{ userList.name }}</div>
-        <div class="postUpdateTime">{{ userList.postTime }}</div>
-      </div>
-    </div>
-    <div class="postType">
-      <div *ngIf="userList.postTypeImg;then imageDiv else contentDiv"></div>
-      <ng-template #imageDiv>
-          <div class="postTypeImg"><img src="{{ userList.postTypeImg }}"></div>
-      </ng-template>
-      <ng-template #contentDiv>
-          <div class="postTypeContent">{{ userList.postTypeContent}}</div>
-      </ng-template>
-    </div>
-    <div class="commentReplySet">
-      <ul>
-        <li *ngFor="let postMess of userList.postComments">
-          <div class="replyUserPicandMessageSet">
-            <div class="replyUserPic"><img src="{{postMess.commentUserPic}}"></div>
-            <div class="replyUserMessage">{{postMess.Comment}}</div>
-          </div>
-          <ul>
-            <li *ngFor="let postMessReply of postMess.reply">
-              <div class="replyUserPicandMessageSet">
-                <div class="replyUserPic"><img src="{{postMessReply.replyUserPhoto}}"></div>
-                <div class="replyUserMessage"><span class="replyNameBold">{{postMessReply.replyUserName}} </span> {{postMessReply.replyUser}}</div>
-              </div>
-
-              <ul>
-                <li *ngFor="let secondPostMessReply of postMessReply.secondLevelReply">
-                  <div class="replyUserPicandMessageSet">
-                    <div class="replyUserPic"><img src="{{secondPostMessReply.secondReplyUserPhoto}}"></div>
-                    <div class="replyUserMessage"><span class="replyNameBold">{{secondPostMessReply.secondReplyUserName}} </span> {{postMessReply.replyUser}}</div>
-                  </div>
-                </li>
-                <input class="postComment" placeholder="Type your comment" />
-              </ul>
-
-
-            </li>
-            <input class="postComment" placeholder="Type your comment" />
-          </ul>
-        </li>
-      </ul>
-    </div>
+    <app-post-header [postHeader]="dataList[i]"></app-post-header>
+    <app-post-type [postType]="dataList[i]"></app-post-type>
+    <app-comment-leve1 [postComment]="dataList[i]"></app-comment-leve1>
     <input class="postComment" placeholder="Type your comment" />
   </div>
 </div>
-
-<div class="officeSet" *ngFor="let office of teamName">
-<div class="name">{{office.name}}</div>
-<div class="name">{{office.address}}</div>
-</div>
- <!-- <div class="postComment" *ngFor="let userPic of userList.postComments">{{userPic.Comment}}
+<!-- <div class="postComment" *ngFor="let userPic of userList.postComments">{{userPic.Comment}}
       <div *ngFor="let reply of userPic.reply">{{reply.replyUser}}</div>
 
     </div> -->
-     <!-- <div class="postProfilePic" *ngFor="let userPic of userList.postComments"><img src="{{userPic.profileImage}}"></div> -->
+<!-- <div class="postProfilePic" *ngFor="let userPic of userList.postComments"><img src="{{userPic.profileImage}}"></div> -->
