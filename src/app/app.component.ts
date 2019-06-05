@@ -22,26 +22,26 @@ export class AppComponent {
           Comment: "Its looking good and I love this place",
           reply: [
             {
-              replyUserName: "Suresh",
+              replyUserName: "Louis",
               replyUserPhoto: "../../assets/images/4.jpg",
               replyUser: "Not that much good",
               replyLikeAndDislike: "",
               secondLevelReply: [
                 {
-                  secondReplyUserName: "Shankalal",
+                  secondReplyUserName: "Franklin",
                   secondReplyUserPhoto: "../../assets/images/4.jpg",
                   secondReplyUser: "Not that much good",
                   secondReplyLikeAndDislike: ""
                 },
                 {
-                  secondReplyUserName: "Raja",
+                  secondReplyUserName: "Alexander",
                   secondReplyUserPhoto: "../../assets/images/5.jpg",
                   secondReplyUser:
                     "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text.",
                     secondReplyLikeAndDislike: ""
                 },
                 {
-                  secondReplyUserName: "Senthil",
+                  secondReplyUserName: "Jude",
                   secondReplyUserPhoto: "../../assets/images/6.jpg",
                   secondReplyUser: "Green is better than blue",
                   secondReplyLikeAndDislike: ""
@@ -56,7 +56,7 @@ export class AppComponent {
               replyLikeAndDislike: ""
             },
             {
-              replyUserName: "Senthil",
+              replyUserName: "Alex",
               replyUserPhoto: "../../assets/images/6.jpg",
               replyUser: "Green is better than blue",
               replyLikeAndDislike: ""
@@ -76,13 +76,13 @@ export class AppComponent {
               replyLikeAndDislike: ""
             },
             {
-              replyUserName: "Raja",
+              replyUserName: "Jack",
               replyUserPhoto: "../../assets/images/9.jpg",
               replyUser: "Green is better than blue",
               replyLikeAndDislike: ""
             },
             {
-              replyUserName: "Praksah",
+              replyUserName: "Thomas",
               replyUserPhoto: "../../assets/images/10.jpg",
               replyUser: "Green is better than blue",
               replyLikeAndDislike: ""
@@ -90,7 +90,7 @@ export class AppComponent {
           ]
         }
       ],
-      postLikeAndDislike: ["Vincent", "Suresh", "Mark"],
+      postLikeAndDislike: ["Vincent", "Link Man", "Mark"],
       postSharingCount: "45",
       commentsCount: "50"
     },
@@ -112,7 +112,7 @@ export class AppComponent {
               replyLikeAndDislike: ""
             },
             {
-              replyUserName: "Karan",
+              replyUserName: "Road Man",
               replyUserPhoto: "../../assets/images/4.jpg",
               replyUser:
                 "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ",
@@ -131,19 +131,19 @@ export class AppComponent {
           Comment: "Its looking good",
           reply: [
             {
-              replyUserName: "Ramasamy",
+              replyUserName: "Copper Black",
               replyUserPhoto: "../../assets/images/1.jpg",
               replyUser: "Not that much good",
               replyLikeAndDislike: ""
             },
             {
-              replyUserName: "Ramesh",
+              replyUserName: "Smith",
               replyUserPhoto: "../../assets/images/6.jpg",
               replyUser: "Green is better than blue",
               replyLikeAndDislike: ""
             },
             {
-              replyUserName: "Raja",
+              replyUserName: "Lee Lee",
               replyUserPhoto: "../../assets/images/5.jpg",
               replyUser:
                 "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ",

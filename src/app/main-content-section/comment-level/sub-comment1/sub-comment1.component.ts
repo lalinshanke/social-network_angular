@@ -11,6 +11,7 @@ export class SubComment1Component implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    console.log('shankarlal', this.subComment1)
   }
 
 }
