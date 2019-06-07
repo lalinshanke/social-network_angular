@@ -1,4 +1,4 @@
-<div class="contentSection" *ngFor="let userList of dataList; let i = index">
+<div *ngFor="let userList of dataList; let i = index">
   <div class="postInfoSet">
     <app-post-header [postHeader]="dataList[i]"></app-post-header>
     <app-post-type [postType]="dataList[i]"></app-post-type>
