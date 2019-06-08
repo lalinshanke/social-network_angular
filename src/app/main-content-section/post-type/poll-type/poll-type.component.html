@@ -1,0 +1,8 @@
+<div class="postType" *ngIf="postPollType.catagory == '3'">
+  <div class="pollQuestion">{{ postPollType.pollQuestion }}</div>
+  <div class="pollAnswerSet">
+    <div class="pollAnswer" *ngFor="let polls of postPollType.pollAnswer">
+      <input type="radio" name="poll"/><span>{{ polls.option }}</span>  <span>{{ polls.count }}</span>
+    </div>
+  </div>
+</div>

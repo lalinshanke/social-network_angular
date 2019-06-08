@@ -1,4 +1,12 @@
-<div class="postType">
+
+
+<app-content-type [postContentType]="postType"></app-content-type>
+<app-image-type [postImgType]="postType"></app-image-type>
+<app-poll-type [postPollType]="postType"></app-poll-type>
+
+
+
+<!-- <div class="postType">
     <div *ngIf="postType.postTypeImg; then imageDiv; else contentDiv"></div>
     <ng-template #imageDiv>
       <div class="postTypeImg"><img src="{{ postType.postTypeImg }}" /></div>
@@ -6,4 +14,4 @@
     <ng-template #contentDiv>
       <div class="postTypeContent">{{ postType.postTypeContent }}</div>
     </ng-template>
-  </div>
+  </div> -->

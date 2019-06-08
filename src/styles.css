@@ -15,7 +15,7 @@ body{padding:0; margin:0; font-family: Arial, Helvetica, sans-serif; font-size: 
 .postUserName{font-weight: bold; font-size: 15px; text-transform: uppercase; color:#656060}
 .postUpdateTime {color:darkgray}
 .postType{background-color: #e9f4fe; padding: 15px; margin-bottom: 15px; border:solid 1px #c5e3fc}
-input {width: 100%; padding: 12px 15px; box-sizing: border-box; border: solid 1px #90caf9; outline: none; color: #6a6c6d;}
+.postComment {width: 100%; padding: 12px 15px; box-sizing: border-box; border: solid 1px #90caf9; outline: none; color: #6a6c6d;}
 .commentReplySet ul {margin: 0 0 15px 0; padding: 0;}
 .commentReplySet ul li {list-style: none; }
 .commentReplySet ul li ul {background-color:#e9f4fe; padding: 10px; margin-top: 5px; margin-left: 40px;}

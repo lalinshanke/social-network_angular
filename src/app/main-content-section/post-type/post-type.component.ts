@@ -9,9 +9,11 @@ export class PostTypeComponent implements OnInit {
 
   @Input() postType: any;
 
+
   constructor() { }
 
   ngOnInit() {
+    console.log('shankarlal', this.postType)
   }
 
 }
